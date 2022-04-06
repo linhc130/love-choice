@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shiba-Dinn</title>
-    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <title>Love Choice</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="css/calculator.css">
     <script src="js/calculator.js"></script>
   </head>
@@ -14,16 +14,17 @@
   <body>
     <div class="wrap">
       <div class="header">
-        <img src="https://github.com/siaoliu66/Shiba-Dinn/blob/gh-pages/image/logo.png?raw=true" alt="">
+        <a href="https://www.facebook.com/groups/lovechoice.shop">
+          <img src="image/logo.png?raw=true" title="按下連到 暖陽生活選物" alt="">
+        </a>
       </div>
       <div class="container">
-        <label for="price">商品金額</label>
+        <label for="shipping">商品件數</label>
+        <input type="number" class="form shipping" id="shipping" placeholder="請輸入代購總件數">
+       <label for="price">商品總金額</label>
         <input type="number" class="form price" id="price" placeholder="請輸入日幣金額">
-        <label for="shipping">日本境內運費</label>
-        <input type="number" class="form shipping" id="shipping" placeholder="請輸入日本境內運費,無運費請填0">
         <label for="num">預估重量</label>
-        <input type="number" class="form num" id="num" placeholder="請輸入預估重量(公斤)">
-        <!-- <div class="input-group"><input type="checkbox" class="vip" id="vip"><label for="vip" style="margin:0px">是否符合週年慶滿額折</label></div> -->
+        <input type="number" class="form num" id="num" placeholder="請輸入預估重量(公斤)" value="5">
         <button onclick="cal()">計算價格</button>
       </div>
       <hr>

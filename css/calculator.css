@@ -3,7 +3,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: #ffd68c;
+  background: #ed70e5;
 }
 
 .wrap {
@@ -11,8 +11,8 @@ body {
   padding: 15px;
   width: 100%;
   margin: auto;
-  background-color: #006973;
-  color: #ffd68c;
+  background-color: #f7e4e8;
+  color: #2b1e05;
 }
 
 .wrap .header {
