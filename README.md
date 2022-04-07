@@ -1,7 +1,7 @@
 # 更新匯率
 js/calculator.js
 手動變更 第二行
-    var forex = 0.270 // 日幣 新台幣 匯率
+    var forex = 0.260 // 日幣 新台幣 匯率
 
 ## Thanks to 
 
