@@ -1,5 +1,5 @@
 function cal() {
-    var forex = 0.270 // 日幣 新台幣 匯率
+    var forex = 0.260 // 日幣 新台幣 匯率
     var price = parseInt($(".price").val())
     var Shipping = parseInt($(".shipping").val())
     var num = parseFloat($(".num").val())
