@@ -1,10 +1,10 @@
 function cal() {
-    var forex = 0.260 // 日幣 新台幣 匯率
+    var forex = 0.240 // 日幣 新台幣 匯率
     var price = parseInt($(".price").val())
     var Shipping = parseInt($(".shipping").val())
     var num = parseFloat($(".num").val())
     var totalPrice = Math.round(price * forex + Shipping * 50)
-    var finalPrice = Math.round(totalPrice + num * 300 )
+    var finalPrice = Math.round(totalPrice + num * 350 )
 
     var text = ``
 if (Shipping == 0 || (Shipping !== Shipping) || (price !== price) || (num !== num)) {
@@ -12,8 +12,8 @@ if (Shipping == 0 || (Shipping !== Shipping) || (price !== price) || (num !== nu
     } else { 
         text += `<p>📣報價如下</br>🔷商品金額：<span class="Price">${toCurrency(price)}</span> * <span class="forex">${toCurrency(forex)}</span> + (代購件數)<span class="Shipping">${toCurrency(Shipping)}</span> * 50` 
         text += ` = <span class="totalPrice">${toCurrency(totalPrice)}</span></br>
-🔷國際運費：1公斤300元</br>
-🔷估算應付金額：<span class="totalPrice">${toCurrency(totalPrice)}</span> + <span class="Num">300*${num}</span>(重量預估${num}kg以內) = <span class="finalPrice">${toCurrency(finalPrice)}</span></br>
+🔷國際運費：1公斤350元</br>
+🔷估算應付金額：<span class="totalPrice">${toCurrency(totalPrice)}</span> + <span class="Num">350*${num}</span>(重量預估${num}kg以內) = <span class="finalPrice">${toCurrency(finalPrice)}</span></br>
 (最終應付金額仍由小幫手確認後，訂單方能成立)</p>` }
 
     $(".text").html(text)
